@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.ptvinh203.bcserver.util.entity.AbstractEntity;
 
+import java.sql.Timestamp;
 import java.util.UUID;
 
 @Getter
@@ -25,6 +26,7 @@ public class User extends AbstractEntity {
     private boolean gender;
     private String phoneNumber;
     private String image;
+    private Timestamp deletedAt;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "position_id")
     private AllCode position;

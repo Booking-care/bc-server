@@ -34,14 +34,14 @@ public class InitialDatabase implements CommandLineRunner {
                     AllCode.builder().key("S3").type("STATUS").valueEn("DONE").valueVi("HOÀN THÀNH").build(),
                     AllCode.builder().key("S4").type("STATUS").valueEn("CANCEL").valueVi("BỊ HỦY").build(),
                     // Time
-                    AllCode.builder().key("T1").type("TIME").valueEn("8:00 - 9:00").valueVi("8:00 - 9:00").build(),
-                    AllCode.builder().key("T2").type("TIME").valueEn("9:00 - 10:00").valueVi("9:00 - 10:00").build(),
-                    AllCode.builder().key("T3").type("TIME").valueEn("10:00 - 11:00").valueVi("10:00 - 11:00").build(),
-                    AllCode.builder().key("T4").type("TIME").valueEn("11:00 - 12:00").valueVi("11:00 - 12:00").build(),
-                    AllCode.builder().key("T5").type("TIME").valueEn("13:00 - 14:00").valueVi("13:00 - 14:00").build(),
-                    AllCode.builder().key("T6").type("TIME").valueEn("14:00 - 15:00").valueVi("14:00 - 15:00").build(),
-                    AllCode.builder().key("T7").type("TIME").valueEn("15:00 - 16:00").valueVi("15:00 - 16:00").build(),
-                    AllCode.builder().key("T8").type("TIME").valueEn("16:00 - 17:00").valueVi("16:00 - 17:00").build(),
+                    AllCode.builder().key("T1").type("TIME").valueEn("8:00 AM - 9:00 AM").valueVi("8:00 - 9:00").build(),
+                    AllCode.builder().key("T2").type("TIME").valueEn("9:00 AM - 10:00 AM").valueVi("9:00 - 10:00").build(),
+                    AllCode.builder().key("T3").type("TIME").valueEn("10:00 AM - 11:00 AM").valueVi("10:00 - 11:00").build(),
+                    AllCode.builder().key("T4").type("TIME").valueEn("11:00 AM - 12:00 PM").valueVi("11:00 - 12:00").build(),
+                    AllCode.builder().key("T5").type("TIME").valueEn("1:00 PM - 2:00 PM").valueVi("13:00 - 14:00").build(),
+                    AllCode.builder().key("T6").type("TIME").valueEn("2:00 PM - 3:00 PM").valueVi("14:00 - 15:00").build(),
+                    AllCode.builder().key("T7").type("TIME").valueEn("3:00 PM - 4:00 PM").valueVi("15:00 - 16:00").build(),
+                    AllCode.builder().key("T8").type("TIME").valueEn("4:00 PM - 5:00 PM").valueVi("16:00 - 17:00").build(),
                     // Position
                     AllCode.builder().key("P0").type("POSITION").valueEn("NONE").valueVi("BÁC SĨ").build(),
                     AllCode.builder().key("P1").type("POSITION").valueEn("MASTER").valueVi("THẠC SĨ").build(),
@@ -59,9 +59,9 @@ public class InitialDatabase implements CommandLineRunner {
                     // Admin
                     User.builder().role(adminRole).email("admin@gmail.com").password(passwordEncoder.encode("123456Aa")).firstName("Nguyen").lastName("A").address("Da Nang").gender(true).build(),
                     // Doctor
-                    User.builder().role(doctorRole).email("doctor@gmail.com").password(passwordEncoder.encode("123456Aa")).firstName("Nguyen").lastName("A").address("Da Nang").gender(true).build(),
+                    User.builder().role(doctorRole).email("doctor@gmail.com").password(passwordEncoder.encode("123456Aa")).firstName("Nguyen").lastName("B").address("Da Nang").gender(true).build(),
                     // Patient
-                    User.builder().role(patientRole).email("patient@gmail.com").password(passwordEncoder.encode("123456Aa")).firstName("Nguyen").lastName("A").address("Da Nang").gender(true).build()
+                    User.builder().role(patientRole).email("patient@gmail.com").password(passwordEncoder.encode("123456Aa")).firstName("Nguyen").lastName("C").address("Da Nang").gender(true).build()
             ));
         }
     }
