@@ -2,7 +2,7 @@ package org.ptvinh203.bcserver.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.ptvinh203.bcserver.util.entity.AbstractEntity;
+import org.ptvinh203.bcserver.util.model.AbstractEntity;
 
 import java.util.UUID;
 

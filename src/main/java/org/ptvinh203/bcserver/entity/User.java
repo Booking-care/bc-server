@@ -1,8 +1,9 @@
 package org.ptvinh203.bcserver.entity;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
 import lombok.*;
-import org.ptvinh203.bcserver.util.entity.AbstractEntity;
+import org.ptvinh203.bcserver.util.model.AbstractEntity;
 
 import java.sql.Timestamp;
 import java.util.UUID;
@@ -14,6 +15,7 @@ import java.util.UUID;
 @Builder
 @Entity
 @Table(name = "users")
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class User extends AbstractEntity {
     @Id
     @GeneratedValue

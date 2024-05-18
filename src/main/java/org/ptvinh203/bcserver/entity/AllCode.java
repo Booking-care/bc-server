@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
-import org.ptvinh203.bcserver.util.entity.AbstractEntity;
+import org.ptvinh203.bcserver.util.model.AbstractEntity;
 
 import java.util.UUID;
 

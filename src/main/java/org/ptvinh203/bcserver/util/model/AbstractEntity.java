@@ -1,4 +1,4 @@
-package org.ptvinh203.bcserver.util.entity;
+package org.ptvinh203.bcserver.util.model;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;

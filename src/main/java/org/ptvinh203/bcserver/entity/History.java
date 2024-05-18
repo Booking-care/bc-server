@@ -4,7 +4,7 @@ import io.hypersistence.utils.hibernate.type.array.ListArrayType;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.Type;
-import org.ptvinh203.bcserver.util.entity.AbstractEntity;
+import org.ptvinh203.bcserver.util.model.AbstractEntity;
 
 import java.util.List;
 import java.util.UUID;
