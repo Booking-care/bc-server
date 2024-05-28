@@ -1,51 +1,3 @@
---
--- PostgreSQL database dump
---
-
--- Dumped from database version 15.6 (Ubuntu 15.6-0ubuntu0.23.10.1)
--- Dumped by pg_dump version 15.6 (Ubuntu 15.6-0ubuntu0.23.10.1)
-
--- Started on 2024-05-18 11:07:51 +07
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
---
--- TOC entry 4 (class 2615 OID 2200)
--- Name: public; Type: SCHEMA; Schema: -; Owner: pg_database_owner
---
-
-CREATE SCHEMA public;
-
-
-ALTER SCHEMA public OWNER TO pg_database_owner;
-
---
--- TOC entry 3430 (class 0 OID 0)
--- Dependencies: 4
--- Name: SCHEMA public; Type: COMMENT; Schema: -; Owner: pg_database_owner
---
-
-COMMENT ON SCHEMA public IS 'standard public schema';
-
-
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
-
---
--- TOC entry 214 (class 1259 OID 17287)
--- Name: all_codes; Type: TABLE; Schema: public; Owner: postgres
---
-
 CREATE TABLE public.all_codes (
     created_at timestamp(6) without time zone,
     updated_at timestamp(6) without time zone,
@@ -57,11 +9,11 @@ CREATE TABLE public.all_codes (
 );
 
 
-ALTER TABLE public.all_codes OWNER TO postgres;
+ALTER TABLE public.all_codes OWNER TO "zNxpWKYn0RXphr0";
 
 --
 -- TOC entry 215 (class 1259 OID 17294)
--- Name: bookings; Type: TABLE; Schema: public; Owner: postgres
+-- Name: bookings; Type: TABLE; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 CREATE TABLE public.bookings (
@@ -76,11 +28,11 @@ CREATE TABLE public.bookings (
 );
 
 
-ALTER TABLE public.bookings OWNER TO postgres;
+ALTER TABLE public.bookings OWNER TO "zNxpWKYn0RXphr0";
 
 --
 -- TOC entry 216 (class 1259 OID 17301)
--- Name: clinics; Type: TABLE; Schema: public; Owner: postgres
+-- Name: clinics; Type: TABLE; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 CREATE TABLE public.clinics (
@@ -94,11 +46,11 @@ CREATE TABLE public.clinics (
 );
 
 
-ALTER TABLE public.clinics OWNER TO postgres;
+ALTER TABLE public.clinics OWNER TO "zNxpWKYn0RXphr0";
 
 --
 -- TOC entry 217 (class 1259 OID 17308)
--- Name: histories; Type: TABLE; Schema: public; Owner: postgres
+-- Name: histories; Type: TABLE; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 CREATE TABLE public.histories (
@@ -112,11 +64,11 @@ CREATE TABLE public.histories (
 );
 
 
-ALTER TABLE public.histories OWNER TO postgres;
+ALTER TABLE public.histories OWNER TO "zNxpWKYn0RXphr0";
 
 --
 -- TOC entry 218 (class 1259 OID 17315)
--- Name: schedules; Type: TABLE; Schema: public; Owner: postgres
+-- Name: schedules; Type: TABLE; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 CREATE TABLE public.schedules (
@@ -131,11 +83,11 @@ CREATE TABLE public.schedules (
 );
 
 
-ALTER TABLE public.schedules OWNER TO postgres;
+ALTER TABLE public.schedules OWNER TO "zNxpWKYn0RXphr0";
 
 --
 -- TOC entry 219 (class 1259 OID 17320)
--- Name: specialties; Type: TABLE; Schema: public; Owner: postgres
+-- Name: specialties; Type: TABLE; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 CREATE TABLE public.specialties (
@@ -148,11 +100,11 @@ CREATE TABLE public.specialties (
 );
 
 
-ALTER TABLE public.specialties OWNER TO postgres;
+ALTER TABLE public.specialties OWNER TO "zNxpWKYn0RXphr0";
 
 --
 -- TOC entry 220 (class 1259 OID 17327)
--- Name: users; Type: TABLE; Schema: public; Owner: postgres
+-- Name: users; Type: TABLE; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 CREATE TABLE public.users (
@@ -174,11 +126,11 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO postgres;
+ALTER TABLE public.users OWNER TO "zNxpWKYn0RXphr0";
 
 --
 -- TOC entry 3261 (class 2606 OID 17293)
--- Name: all_codes all_codes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: all_codes all_codes_pkey; Type: CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.all_codes
@@ -187,7 +139,7 @@ ALTER TABLE ONLY public.all_codes
 
 --
 -- TOC entry 3263 (class 2606 OID 17300)
--- Name: bookings bookings_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: bookings bookings_pkey; Type: CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.bookings
@@ -196,7 +148,7 @@ ALTER TABLE ONLY public.bookings
 
 --
 -- TOC entry 3265 (class 2606 OID 17307)
--- Name: clinics clinics_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: clinics clinics_pkey; Type: CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.clinics
@@ -205,7 +157,7 @@ ALTER TABLE ONLY public.clinics
 
 --
 -- TOC entry 3267 (class 2606 OID 17314)
--- Name: histories histories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: histories histories_pkey; Type: CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.histories
@@ -214,7 +166,7 @@ ALTER TABLE ONLY public.histories
 
 --
 -- TOC entry 3269 (class 2606 OID 17319)
--- Name: schedules schedules_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: schedules schedules_pkey; Type: CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.schedules
@@ -223,7 +175,7 @@ ALTER TABLE ONLY public.schedules
 
 --
 -- TOC entry 3271 (class 2606 OID 17326)
--- Name: specialties specialties_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: specialties specialties_pkey; Type: CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.specialties
@@ -232,7 +184,7 @@ ALTER TABLE ONLY public.specialties
 
 --
 -- TOC entry 3273 (class 2606 OID 17333)
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.users
@@ -241,7 +193,7 @@ ALTER TABLE ONLY public.users
 
 --
 -- TOC entry 3279 (class 2606 OID 17364)
--- Name: users fk8im9de3p7o1o1di4b14gxvu6p; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users fk8im9de3p7o1o1di4b14gxvu6p; Type: FK CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.users
@@ -250,7 +202,7 @@ ALTER TABLE ONLY public.users
 
 --
 -- TOC entry 3280 (class 2606 OID 17359)
--- Name: users fkdtr2ppiyhryd53ovem6c4ehp1; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users fkdtr2ppiyhryd53ovem6c4ehp1; Type: FK CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.users
@@ -259,7 +211,7 @@ ALTER TABLE ONLY public.users
 
 --
 -- TOC entry 3276 (class 2606 OID 17344)
--- Name: histories fkfi766aev7es5loll73ldh7co9; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: histories fkfi766aev7es5loll73ldh7co9; Type: FK CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.histories
@@ -268,7 +220,7 @@ ALTER TABLE ONLY public.histories
 
 --
 -- TOC entry 3281 (class 2606 OID 17369)
--- Name: users fkhecyyxshavymu8nsru50m7sjs; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users fkhecyyxshavymu8nsru50m7sjs; Type: FK CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.users
@@ -277,7 +229,7 @@ ALTER TABLE ONLY public.users
 
 --
 -- TOC entry 3278 (class 2606 OID 17354)
--- Name: schedules fkhh7q3ryrcnpun7i6w37ckx71v; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: schedules fkhh7q3ryrcnpun7i6w37ckx71v; Type: FK CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.schedules
@@ -286,7 +238,7 @@ ALTER TABLE ONLY public.schedules
 
 --
 -- TOC entry 3282 (class 2606 OID 17374)
--- Name: users fkih74rpug03pac4o5mqt12j9cl; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users fkih74rpug03pac4o5mqt12j9cl; Type: FK CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.users
@@ -295,7 +247,7 @@ ALTER TABLE ONLY public.users
 
 --
 -- TOC entry 3277 (class 2606 OID 17349)
--- Name: histories fkjq70c4a0bshm6dmafand7v0dr; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: histories fkjq70c4a0bshm6dmafand7v0dr; Type: FK CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.histories
@@ -304,7 +256,7 @@ ALTER TABLE ONLY public.histories
 
 --
 -- TOC entry 3274 (class 2606 OID 17339)
--- Name: bookings fkkbu1x71i8rdh64cdqr5mieewk; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: bookings fkkbu1x71i8rdh64cdqr5mieewk; Type: FK CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.bookings
@@ -313,7 +265,7 @@ ALTER TABLE ONLY public.bookings
 
 --
 -- TOC entry 3275 (class 2606 OID 17334)
--- Name: bookings fkrjdigg8pwko1ircdew8dbge6j; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: bookings fkrjdigg8pwko1ircdew8dbge6j; Type: FK CONSTRAINT; Schema: public; Owner: "zNxpWKYn0RXphr0"
 --
 
 ALTER TABLE ONLY public.bookings
@@ -323,6 +275,6 @@ ALTER TABLE ONLY public.bookings
 -- Completed on 2024-05-18 11:07:52 +07
 
 --
--- PostgreSQL database dump complete
+-- "zNxpWKYn0RXphr0"QL database dump complete
 --
 

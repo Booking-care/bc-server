@@ -1,0 +1,45 @@
+services:
+  application:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: server
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      - SPRING_PROFILE=${SPRING_PROFILE}
+      - SPRING_DATASOURCE_URL=${SPRING_DATASOURCE_URL-jdbc:postgresql://db-postgres:5432/booking_care}
+      - SPRING_DATASOURCE_USERNAME=${SPRING_DATASOURCE_USERNAME-zNxpWKYn0RXphr0}
+      - SPRING_DATASOURCE_PASSWORD=${SPRING_DATASOURCE_PASSWORD-gOgjtF9eJf3CTiK}
+    env_file:
+      - .env
+    networks:
+      - booking-care-network
+  postgres:
+    image: postgres:15
+    container_name: db-postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB-booking_care}
+      - POSTGRES_USER=${POSTGRES_USER-zNxpWKYn0RXphr0}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD-gOgjtF9eJf3CTiK}
+    env_file:
+      - .env
+    ports:
+      - "6002:5432"
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - ./db/initial_db.sql:/docker-entrypoint-initdb.d/initial_db.sql
+    networks:
+      - booking-care-network
+
+volumes:
+  postgres:
+    driver: local
+
+networks:
+  booking-care-network:
+    name: booking-care-network
+    driver: bridge
