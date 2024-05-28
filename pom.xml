@@ -74,6 +74,7 @@
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                         </exclude>
+                        <jvmArguments>-Duser.timezone=UTC+07:00</jvmArguments>
                     </excludes>
                 </configuration>
             </plugin>

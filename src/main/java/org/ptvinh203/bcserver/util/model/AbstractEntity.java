@@ -12,7 +12,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 
 @Setter
@@ -26,8 +26,8 @@ public abstract class AbstractEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @CreationTimestamp
-    private Timestamp createdAt;
+    private LocalDateTime createdAt;
     @UpdateTimestamp
-    private Timestamp updatedAt;
+    private LocalDateTime updatedAt;
 }
 
